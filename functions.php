@@ -10,7 +10,7 @@ document.getElementsByClassName('entry-content')[0], true)) {
     var selection;
     selection = window.getSelection();
     var oldselection = selection
-    var pagelink = "<br /><br /> Baca selanjutnya di Mutiara Dakwah: <?php the_title(); ?> <a href='<?php echo wp_get_shortlink(get_the_ID()); ?>'><?php echo wp_get_shortlink(get_the_ID()); ?></a>"; //Ubah ini jika Anda suka
+    var pagelink = "<br /><br /> Baca selanjutnya di Mutiara Dakwah: <a href='<?php echo wp_get_shortlink(get_the_ID()); ?>'><?php echo wp_get_shortlink(get_the_ID()); ?></a>"; //Ubah ini jika Anda suka
     var copy_text = selection + pagelink;
     var new_div = document.createElement('div');
     new_div.style.left='-99999px';
